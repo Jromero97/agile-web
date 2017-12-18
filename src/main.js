@@ -6,6 +6,7 @@ import jQuery from 'jquery';
 import Portfolio from '@/components/portfolio/Portfolio.vue';
 import Home from '@/components/home/Home.vue';
 import About from '@/components/about/About.vue';
+import Contact from '@/components/contact/Contact.vue';
 
 import App from './App';
 import router from './router';
@@ -18,7 +19,7 @@ Vue.config.debug = true;
 Vue.component('portfolio', Portfolio);
 Vue.component('home', Home);
 Vue.component('about', About);
-
+Vue.component('contact', Contact);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -29,6 +30,7 @@ new Vue({
     mainView: 'home',
     leftView: 'portfolio',
     rightView: 'about',
+    bottomView: 'contact',
   },
 });
 

@@ -1,25 +1,14 @@
 div.hello
   h1 {{ msg }}
-  h2 Essential Links
-  ul
-    li
-      a(href="https://vuejs.org" target="_blank") VueJS
-      a(href="https://forum.vuejs.org" target="_blank") VueJS Forum
-      a(href="https://chat.vuejs.org" target="_blank") Chat room VueJS
-      a(href="https://twitter.com/vuejs" target="_blank") VueJS on Twitter
-  br
-  li
-    a(href="http://vuejs-templates.github.io/webpack/") Docs for This Template
-  h2 Ecosystem
-  ul
-    li
-      a(href="http://router.vuejs.org/" target="_blank") vue-router
-    li
-      a(href="http://vuex.vuejs.org/" target="_blank") vuex
-    li
-      a(href="http://vue-loader.vuejs.org/" target="_blank") vue-loader
-    li
-      a(href="https://github.com/vuejs/awesome-vue" target="_blank") awesome-vue
+  p A technological consulting company with experience in management and development of social impact projects, focused on pragmatic and effective solutions.
   div.container
-    router-link(to="/portfolio") Portfolio
-    router-link(to="/about") About us
+    ul
+      li
+        router-link.snapCursor(to="/" data-snap-scale="2.5") Home
+      li
+        router-link.snapCursor(to="/portfolio" data-snap-scale="2.5") Portfolio
+      li
+        router-link.snapCursor(to="/about" data-snap-scale="2.5") About us
+      li
+        router-link.snapCursor(to="/contact" data-snap-scale="2.5") Contact us
+

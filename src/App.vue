@@ -1,6 +1,6 @@
 <template lang="pug">
   .scene
-    img(src="./assets/logo.png")
+    img#logo(src="./assets/agile-shift-logo.svg")
     router-view
 </template>
 
@@ -216,13 +216,18 @@
 </script>
 
 <style>
+
+  #logo{
+    width:20%;
+  }
+
   .scene {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    /*margin-top: 60px;*/
   }
 
   @media print {
@@ -5208,7 +5213,7 @@ http://flickity.metafizzy.co
   }
 
   ::selection {
-    background: rgba(240,50,50,0.6)
+    background: #f9d243;
   }
 
   html {
@@ -8748,7 +8753,9 @@ http://flickity.metafizzy.co
   body,html {
     padding: 0;
     margin: 0;
-    position: relative
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
 
   html {
@@ -8777,7 +8784,7 @@ http://flickity.metafizzy.co
 
   @media (max-width: 991px) {
     .light,.shadow {
-      display:none !important
+      /*display:none !important*/
     }
   }
 
@@ -8817,7 +8824,7 @@ http://flickity.metafizzy.co
     }
 
     .light-inner {
-      background: #f4193d
+      background: #424248;
     }
   }
 

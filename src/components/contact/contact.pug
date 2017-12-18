@@ -1,0 +1,73 @@
+div#form-container.container
+  router-link(to='/') Home
+  form#contact-form(method='post')
+    h1 Work with us
+    p Our clients get the best results when they have our team dedicate to their business for extended periods of time.
+    div
+      h2 Tell us about yourself
+      p By filling in the form you agree with our statements
+      label
+        input#form-firstname(name='firs_name' placeholder="First name" type="text" required=true)
+        span First Name
+      label
+        input#form-lastname(name='last_name' placeholder="Last Name" type="text" required=true)
+        span Last Name
+      label
+        input#form-email(name='email' placeholder="Email" required=true type='email')
+        span Email
+      label
+        input#form-phone(name='phone' placeholder="Phone" required=true type='tel')
+        span Phone
+    div
+      h2 Company
+      label
+        input#form-company(name='company-name' placeholder="Company name" required=true type='text')
+        span Company Name
+      label
+        input#form-position(name='form-position' placeholder="Your position" required=true type='text')
+        span Your position
+      div
+        input#company-size-1(name='company-size' type='radio' value="Funded Startup" data-count="1-99")
+        label(for='company-size-1')
+          span 1-99 employees
+        input#company-size-2(name='company-size' type='radio' value="Small and medium-sized business" data-count="100-999")
+        label(for='company-size-2')
+          span 100-999 employees
+        input#company-size-3(name='company-size' type='radio' value="Enterprise company" data-count="1000+")
+        label(for='company-size-3')
+          span 1000+ employees
+      div#about-your-project-block
+        h2 Tell us about the project
+        label
+          textarea#form-project-description(name="note" placeholder="Priorities, target audience, competitors, deadlines, etc..." required=true style="overflow: hidden; word-wrap: break-word; height: 15em;")
+      div
+        h2 What will we need to do?
+        label
+          textarea#form-hiring-us(name="hiring-us" placeholder="Front-end development, ui/ux design, brand identity, etc..." required=true style="overflow: hidden; word-wrap: break-word; height: 15em;")
+        label
+          input#form-link(name="link" placeholder="Website or app link" type='text')
+          span Website or app link
+      div
+        h2 Annual budget for an outside agency
+        div
+          input#budget-1(name="budget" type="radio" value="$100K - 250K")
+          label(for='budget-1')
+            span $100K - 250K
+          input#budget-2(name="budget" type="radio" value="$250K - 500K")
+          label(for='budget-2')
+            span $100K - 250K
+          input#budget-3(name="budget" type="radio" value="$500K - 1MM")
+          label(for='budget-3')
+            span $500K - 1MM
+      div
+        h2 When do you want to start?
+        label
+          input#form-start-date(name="start-date" placeholder="Start date" required=true type="text")
+          span Start date
+      div
+        h2 How did you discover Agile Shift?
+        label
+          input#form-first-hear-us(name="first-hear-about-us" placeholder="Tell how did you first hear about us" type="text")
+          span Tell how did you first hear about us
+      button.btn.btn-success
+        span Send
