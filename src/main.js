@@ -2,17 +2,21 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import jQuery from 'jquery';
-
-import Portfolio from '@/components/portfolio/Portfolio.vue';
-import Home from '@/components/home/Home.vue';
-import About from '@/components/about/About.vue';
-import Contact from '@/components/contact/Contact.vue';
+import BootstrapVue from './../node_modules/bootstrap-vue/dist/bootstrap-vue.esm';
+import Portfolio from './components/portfolio/Portfolio';
+import Home from './components/home/Home';
+import About from './components/about/About';
+import Contact from './components/contact/Contact';
 
 import App from './App';
 import router from './router';
+import './../node_modules/bootstrap/dist/css/bootstrap.css';
+import './../node_modules/bootstrap-vue/dist/bootstrap-vue.css';
 
 window.jQuery = jQuery;
 window.$ = jQuery;
+Vue.use(BootstrapVue);
+
 
 Vue.config.productionTip = false;
 Vue.config.debug = true;
@@ -20,6 +24,7 @@ Vue.component('portfolio', Portfolio);
 Vue.component('home', Home);
 Vue.component('about', About);
 Vue.component('contact', Contact);
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -32,6 +37,7 @@ new Vue({
     rightView: 'about',
     bottomView: 'contact',
   },
+  render: h => h(App),
 });
 
 // function index() {
@@ -39,3 +45,4 @@ new Vue({
 // }
 //
 // page('/', index());
+

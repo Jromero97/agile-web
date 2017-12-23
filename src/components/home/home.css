@@ -1,17 +1,42 @@
-h1, h2 {
-  font-weight: normal;
+
+.row, .row div {
+  height: inherit;
 }
 
-ul {
-  list-style-type: none;
+h1 {
+  color: #FFFAFF;
+  position: relative;
+  top: 50%;
+}
+
+#bg-1 {
+  background: linear-gradient(#424248,#424248);
+  /*opacity: 0.3;*/
+  transition: all 2s ease-out;
+  transition-delay: 2s;
+}
+
+#bg-1:hover {
+  transition: all 2s ease-out;
+  transition-delay: 2s;
+  background: linear-gradient(to bottom,#f83600,#f9d423);
+}
+
+#bg-2 {
+  background: #424248;
+}
+
+#bg-3 {
+  background: #424248;
+
+}
+
+#bg-4 {
+  background: #424248;
+}
+
+.no-padding{
   padding: 0;
 }
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
 
-a {
-  color: #42b983;
-}
