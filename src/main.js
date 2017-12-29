@@ -1,7 +1,7 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
-import jQuery from 'jquery';
+import jQuery from './../node_modules/jquery/dist/jquery';
 import BootstrapVue from './../node_modules/bootstrap-vue/dist/bootstrap-vue.esm';
 import Portfolio from './components/portfolio/Portfolio';
 import Home from './components/home/Home';

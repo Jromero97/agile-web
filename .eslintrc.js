@@ -6,6 +6,10 @@ module.exports = {
   parserOptions: {
     sourceType: 'module'
   },
+  globals: {
+    '$':true,
+    'jquery':true,
+  },
   env: {
     browser: true,
     jquery: true

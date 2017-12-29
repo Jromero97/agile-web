@@ -1,13 +1,76 @@
-div.row
-  div.col-sm-3.col-md-3.col-lg-3.no-padding#bg-1
-    div#work
-      h1 Work
-  div.col-sm-3.col-md-3.col-lg-3.no-padding#bg-2
-    div#contact
-      h1 Contact
-  div.col-sm-3.col-md-3.col-lg-3.no-padding#bg-3
-    div#investors
-      h1 Investors
-  div.col-sm-3.col-md-3.col-lg-3.no-padding#bg-4
-    div#company
-      h1 Company
+main
+  figure#menu-button.logo.has-hover(style="display: block;")
+    div.wrap.light
+      img(src="./../../assets/agile-logo.png", height="42", width="42")
+  div#menu
+    div.canvas-background(style="z-index: 2;")
+      div.stalker-wrap.active
+        div.stalker.hide
+          div.grad
+          div.grad.active
+    nav
+      ul
+        li.determine-hover.enable-hover
+          div.background(style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;")
+          div.content-wrapper.show(style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);")
+            a.history-link.description(title="Agile Shift", href="#")
+              hgroup
+                div.table-cell
+                  h1 Company
+                  hr
+              p Our principles, services, clients accolades and team members.
+        li.ib-component.determine-hover.enable-hover
+          div.background(style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;")
+          div.content-wrapper.show(style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);")
+            div.title-bar(style="transform: matrix(1, 0, 0, 1, 0, 15); opacity: 0;")
+              h1 Work
+            a.history-link.description
+              hgroup
+                div.table-cell
+                  h1 Work
+                  hr
+              p A handful of case studies for our favorite projects.
+            div.nested-menu(style="transform: matrix(1,0,0,1,0, -227);")
+              div.menu-items(style="transform: matrix(1,0,0,1,0,0);")
+                ul.sub-sections
+                  li.work.flexible-height.determine-hover.enable-hover(style="height:228px;")
+                    div.overlay
+                    div.active-overlay
+                    a.history-link(title="Portfolio 1", href="#", style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);")
+                      span.date 30 DEC 2017
+                      p Observatorio de violencias
+                  li.work.flexible-height.determine-hover.enable-hover(style="height:228px;")
+                    div.overlay
+                    div.active-overlay
+                    a.history-link(title="Portfolio 2", href="#", style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);")
+                      span.date 30 DEC 2017
+                      p Voces contra la violencia
+        li.ib-component.determine-hover.enable-hover
+          div.background(style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;")
+          div.content-wrapper.show(style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);")
+            div.title-bar(style="transform: matrix(1, 0, 0, 1, 0, 15); opacity: 0;")
+              h1 Investors
+            a.history-link.description(style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);")
+              hgroup
+                div.table-cell
+                  h1 Investors
+                  hr
+              p Our best clients and investments support.
+            div.nested-menu(style="transform: matrix(1,0,0,1,0,-227);")
+              div.menu-items(style="transform: matrix(1,0,0,1,0,0);")
+                ul.sub-sections
+                  li.investors.flexible-height.determine-hover.enable-hover(style="height:228px;")
+                    a.history-link(title="IEEPP" href="#")
+                      span.date 30 Dec 2016
+                      p(style="word-wrap: break-word;") Observatorio
+        li.determine-hover.enable-hover
+          div.background(style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;")
+          div.content-wrapper.show(style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);")
+            a.history-link.description
+              hgroup
+                div.table-cell
+                  h1 Contact
+                  hr
+              p Our company location and projects recruitment.
+
+    figure.bottom-gradient

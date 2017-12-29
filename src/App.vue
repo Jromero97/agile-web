@@ -4,7 +4,6 @@
 </template>
 
 <script>
-  // import Cursor from '@/assets/js/cursor';
 
   export default {
     name: 'app',
