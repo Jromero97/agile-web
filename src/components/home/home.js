@@ -21,19 +21,19 @@ export default {
     $('#menu-button').on('click', () => {
       if (count === 0) {
         openNav();
-        imgButton.src = '/static/img/agile-logo.png';
+        imgButton.src = '/../static/img/agile-logo.png';
         menuBackground.classList.remove('show');
         count += 1;
       } else {
         closeNav();
-        imgButton.src = '/static/img/agile-logo-black.png';
+        imgButton.src = '/../static/img/agile-logo-black.png';
         menuBackground.classList.add('show');
         count = 0;
       }
     });
     $('.history-link').on('click', () => {
       closeNav();
-      imgButton.src = '/static/img/agile-logo-black.png';
+      imgButton.src = '/../static/img/agile-logo-black.png';
       menuBackground.classList.add('show');
     });
   },
