@@ -2,4 +2,4 @@
 
 <script src="./contact.js"></script>
 
-<style scoped lang="scss" src="./contact.js"></style>
+<style scoped src="./contact.css"></style>

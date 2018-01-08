@@ -1,17 +1,130 @@
-.container
-  h1 About us - Agile Shift I/O
-  router-link(to="/") Home
-  div
-    h2 Who we are
-    p A technological consulting company that seeks to contribute positively to society through the development of software and ICT projects for NGOs that are linked to personal security, political, economic, social and human rights promotion issues and Commercial Clients.
-  div
-    h2 From idea to final product
-    p We look with critical thinking the best way to develop an idea from scratch that makes a notable impact on society, using design thinking to improve the way that our clients see us and implementing the best adaptable technologies to provide greater viability to our products.
-  div
-    h2 Our process
-    p We build hand in hand with our clients by providing personalized assistance to ensure that product needs are met effectively.
-  div
-    h2 Our localhost
-    h3 Clever minds for big ideas!
-    div#team
-
+.container#child(style="width:100%;")
+  vue-particles(color="#000", style="position: fixed !important; position: absolute; top:0; right:0; left:0; bottom:0; overflow: hidden; z-index:-2" shapeType="polygon" :particleSize="1" :clickEffect="false")
+  div.row#who-we-are
+    div.col-sm-12.col-md-12.col-lg-12
+      div.no-padding(style="width=100%; height:30%;")
+      h2 Who we are?
+      img#ilust(src="src/assets/ilust.png" width="85%" height="500px" style="padding-top: 1em;")
+      p#p1 Agile Shift is a technological consulting company that seeks to contribute positively to society through the development of software and ICT projects for NGOs that are linked to personal security, political, economic, social and human rights promotion issues and Commercial clients.
+  div.row#idea-to-product
+    div.col-sm-12.col-md-12.col-lg-12
+      h2 Give us an idea, we give to you a product!
+      p#p2 We look with a critical thinking the best way to develop your idea from scratch that makes a notable impact on society, using advanced design techniques to improve the way that you see us and implementing the best adaptable technologies to provide viability and confidence to your product.
+  div.row#mapping
+    div.col-sm-6.col-md-6.col-lg-6
+      div#navMenu.diamond
+        div#mainRotCorrect.rotCorrect
+          img(src="src/assets/idea.svg" width="100" height="100")
+      div#nav1.nav.nav1.diamond.small
+        div.rotCorrect
+          img(src="src/assets/empathize-1.svg" width="32" height="32")
+      div#nav2.nav.nav2.diamond.small
+        div.rotCorrect
+          img(src="src/assets/ideate.svg" width="32" height="32")
+      div#nav3.nav.nav3.diamond.small
+        div.rotCorrect
+          img(src="src/assets/prototype.svg" width="32" height="32")
+      div#nav4.nav.nav4.diamond.small
+        div.rotCorrect
+          img(src="src/assets/test.svg" width="32" height="32")
+      div#nav5.nav.nav5.diamond.small
+        div.rotCorrect
+          img(src="src/assets/implement.svg" width="32" height="32")
+    div.col-sm-6.col-md-6.col-lg-6(style="height: 22em;")
+      div#empathize.arrow-form
+        div.design-steps
+          h2 <u>Empathize</u>
+          p Conduct research to develop an understanding of your users.
+      div#ideate.arrow-form
+        div.design-steps
+          h2 <u>Define and Ideate</u>
+          p Combine all our research and observe where our users' problems exist to generate a range of crazy, creative ideas!
+      div#prototype.arrow-form
+        div.design-steps
+          h2 <u>Prototype</u>
+          p We build real, tactile representations for a range of our clients ideas!
+      div#tests.arrow-form
+        div.design-steps
+          h2 <u>Test</u>
+          p We return results to our users for feedback on their products!
+      div#implement.arrow-form
+        div.design-steps
+          h2 <u>Implement</u>
+          p We put the vision of your idea into effect!
+  div.row#process
+    div.col-sm-12.col-md-12.col-lg-12
+      h2 Take a look to our process!
+      p#p3 We work hand in hand with you giving you personalized assistance to ensure that the product we develop meets your needs.
+      div.col-sm-12.col-md-12.col-lg-12
+        ul#ul-timeline.timeline
+          li
+            div.direction-r
+              div.flag-wrapper
+                span.hexa
+                span.flag Individuals and Interactions
+                span.time-wrapper
+                  span.time First
+              div.desc Self organization and motivation are important, as are interactions like co-location and pair programming.
+          li
+            div.direction-l
+              div.flag-wrapper
+                span.hexa
+                span.flag Working software
+                span.time-wrapper
+                  span.time Second
+              div.desc Working software is more useful and welcome than just presenting documents to clients in meeting.
+          li
+            div.direction-r
+              div.flag-wrapper
+                span.hexa
+                span.flag Customer collaboration
+                span.time-wrapper
+                  span.time Third
+              div.desc Requirements cannot be fully collected at the beginning of the software development cycle, so it is better to directly involve the paying customer and their end-users.
+          li
+            div.direction-l
+              div.flag-wrapper
+                span.hexa
+                span.flag Responding to change
+                span.time-wrapper
+                  span.time Fourth
+              div.desc Our software development methods are focused on quick responses to change and continuous development.
+  div#speakers.row
+    h2 Our localhost!
+    div.separator
+    div.container
+      div.col-md-8.col-lg-8.col-md-offset-2.col-lg-offset-2
+        p Meet our professional team!
+      div.row1
+        div.col-lg-3.col-md-3
+          a.member-profile(href="#")
+            div.unhover_img
+              img(src="src/assets/speaker-1.png" alt="")
+            div.hover_img
+              img(src="src/assets/speaker-1-hover.png" alt="")
+            span Project Manager
+            h4 <span>Jeans K.</span> Real
+        div.col-lg-3.col-md-3
+          a.member-profile(href="#")
+            div.unhover_img
+              img(src="src/assets/speaker-2.png" alt="")
+            div.hover_img
+              img(src="src/assets/speaker-2-hover.png" alt="")
+            span Lead Developer
+            h4 <span>Herrold H.</span> Real
+        div.col-lg-3.col-md-3
+          a.member-profile(href="#")
+            div.unhover_img
+              img(src="src/assets/speaker-3.png" alt="")
+            div.hover_img
+              img(src="src/assets/speaker-3-hover.png" alt="")
+            span Junior Developer
+            h4 <span>Juan R.</span> Romero
+        div.col-lg-3.col-md-3
+          a.member-profile(href="#")
+            div.unhover_img
+              img(src="src/assets/speaker-4.png" alt="")
+            div.hover_img
+              img(src="src/assets/speaker-4-hover.png" alt="")
+            span Lead Designer
+            h4 <span>Heydi D.</span> Meneses

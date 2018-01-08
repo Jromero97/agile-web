@@ -12,6 +12,7 @@
   left: 0;
   height: 100%;
   width: 100%;
+  transition: all 0.4s;
 }
 
 #menu .canvas-background {
@@ -326,8 +327,76 @@ figure{
   position: relative;
 }
 
-figure{
-  marin:0;
+#menu-background {
+  z-index: 3;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  height: 82px;
+  top:0;
+  left: 0;
+  display: none;
+}
+
+#menu-background.show {
+  display: block;
+}
+
+#menu-background .background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+  transition: opacity 1s;
+}
+
+#menu-background.show .background{
+  opacity: 0.9;
+}
+
+#menu-background .constrain{
+  height: 100%;
+}
+
+#menu-background h1{
+  color: #000222;
+  font-size: 20px;
+  font-family: lemon-milk,serif;
+  font-weight: 400;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+
+#menu-background span{
+  position: absolute;
+  font-family: audimat,serif;
+  display: block;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+
+#menu-background h1,
+#menu-background span{
+  line-height: 82px;
+}
+
+
+.constrain{
+  width: 820px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.row{
+  margin: 0;
 }
 
 

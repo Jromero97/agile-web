@@ -1,5 +1,6 @@
 <template lang="pug">
   .container-fullwidth.text-center
+    <home></home>
     router-view
 </template>
 
@@ -14,10 +15,12 @@
 
   html,body {
     height: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
   .container-fullwidth {
     height: 100%;
   }
+
+
 
 </style>

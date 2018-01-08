@@ -1,21 +1,27 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
-import jQuery from './../node_modules/jquery/dist/jquery';
-import BootstrapVue from './../node_modules/bootstrap-vue/dist/bootstrap-vue.esm';
-import Portfolio from './components/portfolio/Portfolio';
-import Home from './components/home/Home';
-import About from './components/about/About';
-import Contact from './components/contact/Contact';
+import VueFormWizard from 'vue-form-wizard';
+import 'vue-form-wizard/dist/vue-form-wizard.min.css';
+import VueParticles from 'vue-particles';
+import Portfolio from '@/components/portfolio/Portfolio';
+import Home from '@/components/home/Home';
+import About from '@/components/about/About';
+import Contact from '@/components/contact/Contact';
+// import jQuery from './../node_modules/jquery/dist/jquery';
 
+import BootstrapVue from './../node_modules/bootstrap-vue/dist/bootstrap-vue.esm';
 import App from './App';
 import router from './router';
+//
 import './../node_modules/bootstrap/dist/css/bootstrap.css';
 import './../node_modules/bootstrap-vue/dist/bootstrap-vue.css';
 
-window.jQuery = jQuery;
-window.$ = jQuery;
+Vue.use(VueFormWizard);
+// window.jQuery = jQuery;
+// window.$ = jQuery;
 Vue.use(BootstrapVue);
+Vue.use(VueParticles);
 
 
 Vue.config.productionTip = false;
